@@ -1,0 +1,51 @@
+
+
+.blocks_section{
+    display: grid;
+    grid-template-columns: repeat(3,3fr);
+
+    align-items: center;
+
+    
+}
+
+
+  
+  
+.card{
+    /* background-color: aqua; */
+    background: linear-gradient(
+        114.07deg,
+        rgba(66, 59, 55, 0.6) 3.49%,
+        rgba(66, 59, 55, 0) 34.7%
+      ),
+      linear-gradient(138.58deg, rgba(59, 43, 30, 0.37) 43.56%, #fea767 112.68%);
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Set the width */
+    margin-bottom: 1rem;
+    border-radius: 0.7rem;
+    transition: transform 0.3s ease;
+}
+
+.card img{
+    /* max-height: 10rem; */
+    max-width: 100%; /* Make sure the image fits within the card */
+  height: 90%; /* Maintain the image's aspect ratio */
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.card h3{
+    font-size: 18px;
+  margin: 0;
+  color: var(--clr-white);
+}
+
+.card:hover {
+    transform: scale(1.06); /* Scale up the card on hover */
+    cursor: pointer;
+  }
+
+ 
